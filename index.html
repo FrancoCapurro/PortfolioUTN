@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- DEFINE QUE ES UN DOCUMENTO HTML -->
+<head> <!-- Confirugarciones -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Franco Capurro</title>
+</head>
+
+<header>
+    <div class="menu">
+    <a href="#inicio"><h3>INICIO</h3></a>
+    <a href="#sobreMi"><h3>SOBRE MI</h3></a>
+    <a href="#conocimientos"><h3>CONOCIMIENTOS</h3></a>
+    <a href="#proyectos"><h3>PROYECTOS</h3></a>
+    <a href="#contacto"><h3>CONTACTO</h3></a>
+    </div> 
+</header>
+
+<body> <!-- LO QUE EL NAVEGADOR INTERPRETA -->
+
+    <script>
+        function mensajeEnvio() {
+            let user = document.getElementById("txtNombre").value;
+            let email = document.getElementById("email").value
+            let texto = document.getElementById("areaTexto").value
+            if (user == "" || email == "" || texto == "") {
+                alert("El formulario esta incompleto, no se puede enviar")
+            } else {
+                alert (user + " su mensaje fue enviado");
+            }  
+        }
+    </script>
+    <section id="inicio">
+        <div class="seccionInicio">
+            <img src="perfil.png" alt="FOTO PERFIL">
+        </div>
+        <h2>Franco Capurro</h2>
+    </section>
+    
+    <section id="sobreMi">
+            
+            <div class="textoSobre">
+                <h2>SOBRE MI</h2>
+                <p>Estudiante de 2do año de la Tecnicatura Universitaria en Programacion en la Universidad Tecnologica Nacional
+                    (plan 2024). Actualmente estoy cursando el 3er cuatrimestre de la carrera donde estamos aprendiendo C#, SQL y etapas de desarrollo de sistemas.
+                    Estoy interesado en aprender acerca de QA Automation en el futuro.
+                </p>
+                
+                <a href="https://github.com/FrancoCapurro"><img src="github.png" alt="" width="50"></a>
+                <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="" width="50"></a>
+            </div>
+        
+                
+                       
+    </section>
+
+    <!--FIN SOBRE MI-->
+
+    <section id="conocimientos">
+            <h2>CONOCIMIENTOS</h2>
+        <div>
+                    <img src="sql.png" alt="SQL" width="195">
+                    <img src="c++.png" alt="C++" width="165"> 
+                    <img src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" alt="C#" width="200">         
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>PROYECTOS</h2>
+        <div class="contenedorProyectos">
+            <img src="fotoMenu.png" alt="SQL" width="500">
+            <div class="textoProyecto">
+                <P>Sistema ABML de articulos, marcas y categorias. Realizado en C# con WINFORMS y con conexion a Base de datos mediante ADO.NET. Aplicacion realizada en grupo para la materia Programacion III</P>
+                <div class="contenedorVerMas"><a href="https://github.com/Jaskeir/tp-winform-equipo-7B">VER MAS</a> </div>   
+            </div>
+        </div>
+        
+        
+        
+    </section>
+    
+    <section id="contacto">
+        <h2>CONTACTO</h2>
+
+        <div class="contenedorForm">
+            <form action="">
+               <p><label for="Nombre y Apellido">Nombre y apellido:</label></p>
+               <input type="text" id="txtNombre"> 
+               <p><label for="Email">Email:</label></p>
+               <input type="email" id="email">
+               <textarea placeholder="Ingrese su consulta aca" id="areaTexto"></textarea>  
+               <button onclick = "mensajeEnvio()" type="reset">Enviar</button>
+            </form>
+        </div> 
+    </section>
+
+
+
+   
+    
+    
+
+    <footer>
+       <p>Copyright © 2024</p>
+    </footer>
+    
+
+</body>
+</html>
+
+
+
+
